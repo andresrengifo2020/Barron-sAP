@@ -1,0 +1,17 @@
+9. When will method whatIsIt cause a stack overflow (i.e., cause computer memory to be exhausted)?
+public static int whatIsIt(int x, int y)
+{
+if (x > y)
+return x * y;
+else
+return whatIsIt(x - 1, y);
+}
+(A) Only when x < y
+(B) Only when x ≤ y
+(C) Only when x > y
+(D) For all values of x and y
+(E) The method will never cause a stack overflow.
+
+9. (B) When x ≤ y, a recursive call is made to whatIsIt(x-1, y). If x decreases
+at every recursive call, there is no way to reach a successful base case. Thus, the
+method never terminates and eventually exhausts all available memory.
