@@ -1,0 +1,20 @@
+Consider this inheritance hierarchy, in which Novel and Textbook are subclasses
+of Book.
+Book
+Novel Textbook
+Which of the following is a false statement about the classes shown?
+(A) The Textbook class can have private instance variables that are in neither
+Book nor Novel.
+(B) Each of the classes—Book, Novel, and Textbook—can have a method
+computeShelfLife, whose code in Book and Novel is identical, but different from the code in Textbook.
+(C) If the Book class has private instance variables title and author, then Novel
+and Textbook cannot directly access them.
+(D) Both Novel and Textbook inherit the constructors in Book.
+(E) If the Book class has a private method called readFile, this method may not
+be accessed in either the Novel or Textbook classes
+
+Answer
+
+D) Constructors are never inherited. If a subclass has no constructor, the default
+constructor for the superclass is generated. If the superclass does not have a
+default constructor, a compile-time error will occur.
