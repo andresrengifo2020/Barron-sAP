@@ -1,0 +1,20 @@
+A method is to be written to search an array for a value that is larger than a
+given item and return its index. The problem specification does not indicate
+what should be returned if there are several such values in the array. Which of
+the following actions would be best?
+
+(A) The method should be written on the assumption that there is only one
+value in the array that is larger than the given item.
+(B) The method should be written so as to return the index of every occurrence
+of a larger value.
+(C) The specification should be modified to indicate what should be done if
+there is more than one index of larger values.
+(D) The method should be written to output a message if more than one larger
+value is found.
+(E) The method should be written to delete all subsequent larger items after a
+suitable index is returned
+
+Answer
+8. (C) Here is one of the golden rules of programming: Don’t start planning the
+program until every aspect of the specification is crystal clear. A programmer
+should never make unilateral decisions about ambiguities in a specification.
