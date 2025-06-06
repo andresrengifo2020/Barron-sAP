@@ -1,0 +1,38 @@
+6. Refer to the following method that finds the smallest value in an array.
+/** Precondition: arr is initialized with int values.
+* @param arr the array to be processed
+* @return the smallest value in arr
+*/
+public static int findMin(int[] arr)
+  {
+  int min = /* some value */;
+  int index = 0;
+  while (index < arr.length)
+  {
+  if (arr[index] < min)
+  min = arr[index];
+  index++;
+  }
+  return min;
+  }
+
+Which replacement(s) for /* some value */ will always result in correct execution of the findMin method?
+I Integer.MIN_VALUE
+II Integer.MAX_VALUE
+III arr[0]
+(A) I only
+(B) II only
+(C) III only
+(D) I and III only
+(E) II and III only
+
+
+ANSWER
+6. (E) Since the values in arr cannot be greater than Integer.MAX_VALUE, the test
+in the while loop will be true at least once and will lead to the smallest element
+being stored in min. (If all the elements of the array are Integer.MAX_VALUE, the
+code still works.) Similarly, initializing min to arr[0], the first element in the
+array, ensures that all elements in arr will be examined and the smallest will be
+found. Choice I, Integer.MIN_VALUE, fails because the test in the loop will always
+be false! There is no array element that will be less than the smallest possible
+integer. The method will (incorrectly) return Integer.MIN_VALUE.
