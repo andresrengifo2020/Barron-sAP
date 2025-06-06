@@ -1,0 +1,24 @@
+. A programmer is designing a program to catalog all books in a library. He plans
+to have a Book class that stores features of each book: author, title, isOnShelf,
+and so on, with operations like getAuthor, getTitle, getShelfInfo, and
+setShelfInfo. Another class, LibraryList, will store an array of Book objects.
+The LibraryList class will include operations such as listAllBooks, addBook,
+removeBook, and searchForBook. The programmer plans to implement and test
+the Book class first, before implementing the LibraryList class. The programmer’s plan to write the Book class first is an example of
+(A) top-down development.
+(B) bottom-up development.
+(C) procedural abstraction.
+(D) information hiding.
+(E) a driver program.
+
+Answer
+
+The programmer is using an object-oriented approach to writing the program
+and plans to test the simplest classes first. This is bottom-up development. In topdown
+development (choice A), high-level classes are broken down into subsidiary
+classes. Procedural abstraction (choice C) is the use of helper methods in a class.
+Information hiding (choice D) is restriction of access to private data and methods
+in a class. Choice E is wrong because a driver program is one whose sole purpose
+is to test a given method or class. Implementing the simplest classes first may
+involve driver programs that test the various methods, but the overall plan is not
+an example of a driver program.
