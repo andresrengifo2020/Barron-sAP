@@ -1,0 +1,15 @@
+. The color of a pixel can be represented using the RGB (Red, Green, Blue) color
+model, which stores values for red, green, and blue, each ranging from 0 to 255.
+How many bits (binary digits) would be needed to represent a color in the RGB
+model?
+(A) 8
+(B) 16
+(C) 24
+(D) 32
+(E) 40
+
+
+Answer
+(C) 8 bits (1 byte) are required to represent the values from 0 to 255. The base 2
+number 11111111 represents 1+2+4+8+16+32+64+128 = 255. Since there
+are 3 such values in an RGB representation, (8)(3) = 24 bits are needed.
