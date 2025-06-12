@@ -1,0 +1,51 @@
+Here is a typical source file for a Java program.
+/** Program FirstProg.java
+Start with a comment, giving the program name and a brief
+description of what the program does.
+*/
+import package1.*;
+import package2.subpackage.ClassName;
+public class FirstProg //note that the file name is FirstProg.java
+{
+public static type1 method1(parameter list)
+{
+< code for method 1 >
+}
+public static type2 method2(parameter list)
+{
+< code for method 2 >
+}
+...
+public static void main(String[] args)
+{
+< your code >
+}
+}
+
+1. All Java methods must be contained in a class, and all program statements must be placed inside a method
+2. Typically, the class that contains the main method does not contain many additional methods
+3. The words class, public, static, void, and main are reserved words, also called keywords.
+4. The keyword public signals that the class or method is usable outside of the class, whereas private data members or methods (see Chapter 2) are not.
+5. The keyword static is used for methods that will not access any objects of a class, such as the methods in the FirstProg class in the example on the previous page. This is typically true for all methods in a source file that contains no instance variables (see Chapter 2). Most methods in Java do operate on objects
+and are not static. The main method, however, must always be static.
+
+TYPES AND IDENTIFIERS
+An identifier is a name for a variable, parameter, constant, user-defined method, or user-defined class
+By convention identifiers for variables and methods are lowercase. Uppercase letters are used to separate these into multiple words, for example getName, findSurfaceArea, preTaxTotal, and so on. Note that a class name starts with a capital letter. Reserved
+words are entirely lowercase and may not be used as identifiers.
+
+BUILT-IN TYPES
+very identifier in a Java program has a type associated with it. The primitive or built-
+in types that are included in the AP Java subset are
+int An integer. For example, 2, -26, 3000
+boolean A boolean. Just two values, true or false
+double A double precision floating-point number.
+For example, 2.718, -367189.41, 1.6e4
+
+Storage of Numbers
+There are two Java constants that you
+should know. Integer.MAX_VALUE holds the maximum value an int can hold, 231 − 1.
+Integer.MIN_VALUE holds the minimum value an int can hold, −231.
+Built-in types in Java are byte (one byte), short (two bytes), int (four bytes), and
+long (eight bytes). Of these, only int is in the AP Java subset.
+
