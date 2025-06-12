@@ -1,0 +1,15 @@
+12. Consider a Clown class that has a default constructor. Suppose a list
+ArrayList<Clown> list is initialized. Which of the following will not cause an
+IndexOutOfBoundsException to be thrown?
+(A) for (int i = 0; i <= list.size(); i++)
+list.set(i, new Clown());
+(B) list.add(list.size(), new Clown());
+(C) Clown c = list.get(list.size());
+(D) Clown c = list.remove(list.size());
+(E) list.add(-1, new Clown());
+
+
+(B) The index range for ArrayList is 0 ≤ index ≤ size()-1. Thus, for methods
+get, remove, and set, the last in-bounds index is size()-1. The one exception is
+the addmethod—to add an element to the end of the list takes an index parameter
+list.size().
