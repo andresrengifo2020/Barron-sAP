@@ -1,0 +1,21 @@
+11. Suppose the characters 0, 1, . . . , 8, 9, A, B,C, D, E, F are used to represent a hex-
+adecimal (base-16) number. Here A = 10, B = 11, . . . , F = 15. What is the largest
+base-10 integer that can be represented with a two-digit hexadecimal number,
+such as 14 or 3A?
+(A) 32
+(B) 225
+(C) 255
+(D) 256
+(E) 272
+
+(C) A base-b number can be represented with b characters. Thus, base-2 uses
+0,1 for example, and base-10 uses 0,1, . . . ,8,9. A hexadecimal (base-16) number
+is represented with 16 characters: 0,1, . . . ,8,9,A,B,C,D, E,F, where A = 10,B =
+11, . . . ,F = 15. The largest two-place base-2 integer is
+11 = 1×20+1×21 = 3
+The largest two-place base-10 integer is
+99 = 9×100+9×101
+The largest two-place base-16 integer is
+FF = F×160+F×161
+The character F represents 15, so
+FF = 15×160+15×161 = 255
