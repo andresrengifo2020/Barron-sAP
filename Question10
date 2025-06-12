@@ -1,0 +1,11 @@
+The boolean expression a[i] == max || !(max != a[i]) can be simplified to
+(A) a[i] == max
+(B) a[i] != max
+(C) a[i] < max || a[i] > max
+(D) true
+(E) false
+
+
+(A) The expression !(max != a[i]) is equivalent to max == a[i], so the given
+expression is equivalent to a[i] == max || max == a[i], which is equivalent to
+a[i] == max.
